@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume Builder"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job Title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Professional Summary"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Work Experience (bullet points)"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/etEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Education (bullet points)"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/etSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skills (comma-separated or grouped)"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/etProjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Projects (bullet points)"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top" />
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Resume"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>

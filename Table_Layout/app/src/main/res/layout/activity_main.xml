@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Row 1: Time -->
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:padding="5dp" />
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </TableRow>
+
+    <!-- Row 2: First Name -->
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp" />
+    </TableRow>
+
+    <!-- Row 3: Last Name -->
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp" />
+    </TableRow>
+
+    <!-- Row 4: Rating Bar -->
+    <TableRow>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <!-- Row 5: Submit Button -->
+    <TableRow>
+        <Button
+            android:id="@+id/button"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </TableRow>
+
+</TableLayout>
